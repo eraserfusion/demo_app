@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-
+  
+  # GET /microposts
+  # GET /microposts.json
   def index
     @users = User.all
   end
